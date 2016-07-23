@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>NewPelada</ion-title>
+    <ion-title>Criar nova Pelada</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -22,14 +22,37 @@
   </ion-item>
 
   <ion-item>
-    <ion-label floating>Total de Pessoas</ion-label>
-    <ion-input type="numeric"></ion-input>
+    <ion-label>Hora de inicio</ion-label>
+    <ion-datetime 
+      displayFormat="HH:mm - DDDD, D de MMM" pickerFormat="H mm DDD:MMM:YY"
+      monthNames="janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro"
+      monthShortNames="jan, fev, mar, abr, mai, jun, jul, ago, set, out, nov, dez"
+      dayNames="Domingo, Segunda,Terça,Quarta,Quinta,Sexta,Sábado"
+      dayShortNames="dom, seg, ter, qua,qui,sex,sab"
+    ></ion-datetime>
   </ion-item>
 
   <ion-item>
-    <ion-label>Hora de inicio</ion-label>
-    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A"></ion-datetime>
+    <ion-label>Hora Final</ion-label>
+    <ion-datetime 
+      displayFormat="HH:mm" pickerFormat="H mm"
+      monthNames="janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro"
+      monthShortNames="jan, fev, mar, abr, mai, jun, jul, ago, set, out, nov, dez"
+      dayNames="Domingo, Segunda,Terça,Quarta,Quinta,Sexta,Sábado"
+      dayShortNames="dom, seg, ter, qua,qui,sex,sab"
+    ></ion-datetime>
   </ion-item>
+
+  <ion-item>
+    <ion-label floating>Valor esperado por pessoa</ion-label>
+   <ion-input type="number" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Total de Pessoas</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
 
 
 
