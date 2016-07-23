@@ -18,11 +18,12 @@
   <div class="list">
     <a *ngFor="let currentPelada of peladas" class="item" href="#">
       <h6> {{currentPelada.name}} </h6>
+      <h6> {{currentPelada.maxPlayers}} </h6>
     </a>
   </div>
 
  <ion-toolbar position="bottom">
-  <button secondary round (click)="createNewPelada()">Criar nova Pelada</button>
+  <button secondary round full (click)="goToNewPeladaPage()">Criar nova Pelada</button>
 </ion-toolbar>
 
 </ion-content>

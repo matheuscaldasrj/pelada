@@ -13,7 +13,14 @@ import { NavController } from 'ionic-angular';
 export class NewPeladaPage {
 
   constructor(private nav: NavController) {
+    this.nav = nav;
+  }
 
+  createNewPelada()
+  {
+    
+    alert("Criada");
+    this.nav.pop();
   }
 
 }

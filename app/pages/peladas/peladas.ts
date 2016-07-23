@@ -29,19 +29,22 @@ export class PeladasPage {
        {
             name: "Pelada no lugano",
             playeres: ["Matheus", "Paulinho", "Pijuga", "Thiago", "Daniel"],
-            nextMatch : "30/07"
+            nextMatch : "30/07",
+            maxPlayers: 16
         },
 
       {
             name: "Pelada ByFit",
             playeres: ["Matheus", "Paulinho", "Pijuga", "Thiago", "Daniel"],
-              nextMatch : "05/05"
+              nextMatch : "05/05",
+              maxPlayers: 6
         },
 
       {
             name: "Pelada Federal",
             playeres: ["Matheus", "Paulinho", "Pijuga", "Thiago", "Daniel"],
-            nextMatch : "10/07"
+            nextMatch : "10/07",
+            maxPlayers: 22
         }
     ]
 
@@ -51,7 +54,7 @@ export class PeladasPage {
 
   }
 
-  createNewPelada(){
+  goToNewPeladaPage(){
     this.navController.push(NewPeladaPage)
   }
 }

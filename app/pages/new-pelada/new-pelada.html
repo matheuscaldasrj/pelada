@@ -11,8 +11,33 @@
   </ion-navbar>
 
 </ion-header>
-
-
 <ion-content padding>
+
+
+<ion-list>
+
+  <ion-item>
+    <ion-label floating>Nome da Pelada</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Total de Pessoas</ion-label>
+    <ion-input type="numeric"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Hora de inicio</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A"></ion-datetime>
+  </ion-item>
+
+
+
+ <ion-toolbar position="bottom">
+  <button secondary round full (click)="createNewPelada()">Criar</button>
+</ion-toolbar>
+
+</ion-list>
+
 
 </ion-content>
